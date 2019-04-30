@@ -1,0 +1,28 @@
+language: rust
+sudo: false
+
+cache:
+  - cargo
+
+rust:
+  - stable
+
+before_script:
+  - "(test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)"
+  - (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.1" mdbook)
+  - cargo install-update -a
+
+script:
+  - mdbook build && mdbook test
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: book
+  keep-history: false
+  on:
+    branch: master
+env:
+  global:
+    secure: JcVl7xtnQH8eSQBb2h+WjpUyypM+SABQcScTlyZt4hJEP/khG40nBP1yaJIhNEaV9lSeIvT4F/gL2ZGl1nDLVpc+U66Un4I947SrFc148jAlHIbaLZwJn75vKHJQ7otD9Fpq0CV/TlBbpKwPILFCuweQhO2wUjgxqycIHhRbqd4Nh1+ygFMH5M/eqBz1qd8vC+Zosy0R7ppnrEIP+siY1QyZtlVLIkc3GJaMkc1lK00rFYIxRe66+Um92GcJ4gmwJqtKHjUQLUONYWDftsLqre5gcwJSE0Fy6bXa7g8cp1WkjGnckJAkLqf9AXewO6JGmzr1nrPJfuh2j1XHNWDwAC4gzLl3myJhZpkDr2nQrSsNUg15+ANc2dnua/IVjEOONGKa3SjKKdhgaBJP7HWaf4TacniYfqOcOxM6fsoK9e3hyKeShrGGSthMeIPK4obsFA10oQ8lrfENLfps2gV+IJS1EmtZ/ZLnzoGoj3kJ0t3wtH1AytIDEn1c6neDACabWCjvczbmvjUL+H/rlIRYHAtj2IkKegxsVtl5n/b7zsJMZvS4/EyyHdL9JSYEVyGMnuCXpixrLogmhTPjyR5PVYfAPdwSrnM3oRdApFTnmg8HTK97cyQtLZhIBYwvo6iC7jc8vZKFLy4Vbq1NGW41Dc43tPrFjRU5u11bgMCY3Xg=
