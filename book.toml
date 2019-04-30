@@ -1,0 +1,5 @@
+[book]
+authors = ["natsukium"]
+multilingual = false
+src = "src"
+title = "fish-docs-jp"
