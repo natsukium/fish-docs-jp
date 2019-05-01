@@ -1,4 +1,4 @@
-# Tutorial
+# チュートリアル
 
 {{#include ./tutorial/why_fish.md}}
 {{#include ./tutorial/getting_started.md}}
