@@ -21,3 +21,6 @@
 {{#include ./tutorial/functions.md}}
 {{#include ./tutorial/loops.md}}
 {{#include ./tutorial/prompt.md}}
+{{#include ./tutorial/path.md}}
+{{#include ./tutorial/startup.md}}
+{{#include ./tutorial/autoloading_functions.md}}
