@@ -15,3 +15,6 @@
 {{#include ./tutorial/shell_variables.md}}
 {{#include ./tutorial/lists.md}}
 {{#include ./tutorial/command_substitutions.md}}
+{{#include ./tutorial/separating_commands.md}}
+{{#include ./tutorial/combiners.md}}
+{{#include ./tutorial/conditionals.md}}
