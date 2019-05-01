@@ -9,3 +9,6 @@
 {{#include ./tutorial/wildcards.md}}
 {{#include ./tutorial/pipes_and_redirections.md}}
 {{#include ./tutorial/autosuggestions.md}}
+{{#include ./tutorial/tab_completions.md}}
+{{#include ./tutorial/variables.md}}
+{{#include ./tutorial/exit_status.md}}
