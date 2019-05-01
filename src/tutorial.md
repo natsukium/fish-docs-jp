@@ -12,3 +12,6 @@
 {{#include ./tutorial/tab_completions.md}}
 {{#include ./tutorial/variables.md}}
 {{#include ./tutorial/exit_status.md}}
+{{#include ./tutorial/shell_variables.md}}
+{{#include ./tutorial/lists.md}}
+{{#include ./tutorial/command_substitutions.md}}
