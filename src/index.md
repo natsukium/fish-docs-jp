@@ -1,1 +1,3 @@
-# Documentation
+# ドキュメント
+
+{{#include ./document/introduction.md}}

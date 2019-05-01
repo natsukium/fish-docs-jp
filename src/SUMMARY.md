@@ -1,5 +1,7 @@
 # Summary
 
+- [ドキュメント](./index.md)
+  - [イントロダクション](./document/introduction.md)
 [Documentation](./index.md)
 - [チュートリアル](./tutorial.md)
   - [なぜfishなのか？](./tutorial/why_fish.md)
