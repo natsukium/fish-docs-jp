@@ -18,3 +18,6 @@
 {{#include ./tutorial/separating_commands.md}}
 {{#include ./tutorial/combiners.md}}
 {{#include ./tutorial/conditionals.md}}
+{{#include ./tutorial/functions.md}}
+{{#include ./tutorial/loops.md}}
+{{#include ./tutorial/prompt.md}}
