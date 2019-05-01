@@ -24,3 +24,6 @@
 {{#include ./tutorial/path.md}}
 {{#include ./tutorial/startup.md}}
 {{#include ./tutorial/autoloading_functions.md}}
+{{#include ./tutorial/universal_variables.md}}
+{{#include ./tutorial/switching_to_fish.md}}
+{{#include ./tutorial/ready_for_more.md}}
