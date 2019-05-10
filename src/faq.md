@@ -14,3 +14,12 @@
 {{#include ./faq/syntax_color.md}}
 {{#include ./faq/man_update.md}}
 {{#include ./faq/change_directory.md}}
+{{#include ./faq/open_not_work.md}}
+{{#include ./faq/default_shell.md}}
+{{#include ./faq/weird_output_screen.md}}
+{{#include ./faq/greeting.md}}
+{{#include ./faq/history_substitution.md}}
+{{#include ./faq/shortcut_cd.md}}
+{{#include ./faq/uninstall.md}}
+{{#include ./faq/unicode_puc.md}}
+{{#include ./faq/extra_tools.md}}
