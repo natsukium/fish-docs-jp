@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>FAQ - fish-docs-jp</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="index.html">Documentation</a></li><li><a href="tutorial.html"><strong aria-hidden="true">1.</strong> チュートリアル</a></li><li><ol class="section"><li><a href="tutorial/why_fish.html"><strong aria-hidden="true">1.1.</strong> なぜfishなのか？</a></li><li><a href="tutorial/getting_started.html"><strong aria-hidden="true">1.2.</strong> はじめかた</a></li><li><a href="tutorial/learning_fish.html"><strong aria-hidden="true">1.3.</strong> fishを学ぶ</a></li><li><a href="tutorial/running_commands.html"><strong aria-hidden="true">1.4.</strong> コマンドの実行</a></li><li><a href="tutorial/getting_help.html"><strong aria-hidden="true">1.5.</strong> ヘルプを読む</a></li><li><a href="tutorial/syntax_highlighting.html"><strong aria-hidden="true">1.6.</strong> シンタックスハイライト</a></li><li><a href="tutorial/wildcards.html"><strong aria-hidden="true">1.7.</strong> ワイルドカード</a></li><li><a href="tutorial/pipes_and_redirections.html"><strong aria-hidden="true">1.8.</strong> パイプとリダイレクト</a></li><li><a href="tutorial/autosuggestions.html"><strong aria-hidden="true">1.9.</strong> オートサジェスト</a></li><li><a href="tutorial/tab_completions.html"><strong aria-hidden="true">1.10.</strong> タブ補完</a></li><li><a href="tutorial/variables.html"><strong aria-hidden="true">1.11.</strong> 変数</a></li><li><a href="tutorial/exit_status.html"><strong aria-hidden="true">1.12.</strong> 終了ステータス</a></li><li><a href="tutorial/shell_variables.html"><strong aria-hidden="true">1.13.</strong> エクスポート(シェル変数)</a></li><li><a href="tutorial/lists.html"><strong aria-hidden="true">1.14.</strong> リスト</a></li><li><a href="tutorial/command_substitutions.html"><strong aria-hidden="true">1.15.</strong> コマンド置換</a></li><li><a href="tutorial/separating_commands.html"><strong aria-hidden="true">1.16.</strong> セパレートコマンド(;)</a></li><li><a href="tutorial/combiners.html"><strong aria-hidden="true">1.17.</strong> コンバイナ(and, or, not)</a></li><li><a href="tutorial/conditionals.html"><strong aria-hidden="true">1.18.</strong> 条件式(if, else, switch)</a></li><li><a href="tutorial/functions.html"><strong aria-hidden="true">1.19.</strong> 関数</a></li><li><a href="tutorial/loops.html"><strong aria-hidden="true">1.20.</strong> ループ</a></li><li><a href="tutorial/prompt.html"><strong aria-hidden="true">1.21.</strong> プロンプト</a></li><li><a href="tutorial/path.html"><strong aria-hidden="true">1.22.</strong> PATH変数</a></li><li><a href="tutorial/startup.html"><strong aria-hidden="true">1.23.</strong> 起動に際して(.bashrc)</a></li><li><a href="tutorial/autoloading_functions.html"><strong aria-hidden="true">1.24.</strong> オートロード関数</a></li><li><a href="tutorial/universal_variables.html"><strong aria-hidden="true">1.25.</strong> ユニバーサル変数</a></li><li><a href="tutorial/switching_to_fish.html"><strong aria-hidden="true">1.26.</strong> fishをデフォルトシェルにする</a></li><li><a href="tutorial/ready_for_more.html"><strong aria-hidden="true">1.27.</strong> より多くを知るには</a></li></ol></li><li><a href="faq.html" class="active"><strong aria-hidden="true">2.</strong> FAQ</a></li><li><ol class="section"><li><a href="faq/environment_variable.html"><strong aria-hidden="true">2.1.</strong> 環境変数の追加, 削除をするには？</a></li><li><a href="faq/config_fish.html"><strong aria-hidden="true">2.2.</strong> ログイン時にコマンドを実行するには？ fishの.bashrcは？</a></li><li><a href="faq/prompt.html"><strong aria-hidden="true">2.3.</strong> 独自のプロンプトを設定するには？</a></li><li><a href="faq/history.html"><strong aria-hidden="true">2.4.</strong> 履歴からコマンドを実行するには？</a></li><li><a href="faq/subcommand.html"><strong aria-hidden="true">2.5.</strong> サブコマンドを実行するには？ バッククオートが動作しません！</a></li><li><a href="faq/single_long_string.html"><strong aria-hidden="true">2.6.</strong> pkg-configのような出力が1行の長い文字列のときどうしたらいい？</a></li><li><a href="faq/exit_status.html"><strong aria-hidden="true">2.7.</strong> コマンドの終了ステータスを得るには？</a></li><li><a href="faq/env_var_just_one.html"><strong aria-hidden="true">2.8.</strong> 一回限りの環境変数を設定するには？</a></li><li><a href="faq/var_defined.html"><strong aria-hidden="true">2.9.</strong> 変数が定義されるているか確認するには？</a></li><li><a href="faq/var_not_empty.html"><strong aria-hidden="true">2.10.</strong> 変数が空でないか確認するには？</a></li><li><a href="faq/set_ux.html"><strong aria-hidden="true">2.11.</strong> set -Ux(ユニバーサル変数のエクスポート)が働かない？</a></li><li><a href="faq/syntax_color.html"><strong aria-hidden="true">2.12.</strong> シンタックスハイライトの色を変えるには？</a></li><li><a href="faq/man_update.html"><strong aria-hidden="true">2.13.</strong> manページの補完をアップデートするには？</a></li><li><a href="faq/change_directory.html"><strong aria-hidden="true">2.14.</strong> 間違ってディレクトリのパスを打ってEnter押したらディレクトリが移動してしまいました. 何が起きたの？</a></li><li><a href="faq/open_not_work.html"><strong aria-hidden="true">2.15.</strong> オープンコマンドが働きません</a></li><li><a href="faq/default_shell.html"><strong aria-hidden="true">2.16.</strong> fishをデフォルトシェルにするには？</a></li><li><a href="faq/weird_output_screen.html"><strong aria-hidden="true">2.17.</strong> screenを使ってるとき, プロンプトの前に変な出力がでます</a></li><li><a href="faq/greeting.html"><strong aria-hidden="true">2.18.</strong> グリーティングメッセージを変更するには？</a></li><li><a href="faq/history_substitution.html"><strong aria-hidden="true">2.19.</strong> 履歴置換(!$など)が働かないのはなぜ？</a></li><li><a href="faq/shortcut_cd.html"><strong aria-hidden="true">2.20.</strong> -をcd -のショートカットとして使うには？</a></li><li><a href="faq/uninstall.html"><strong aria-hidden="true">2.21.</strong> アンインストールするには？</a></li><li><a href="faq/unicode_puc.html"><strong aria-hidden="true">2.22.</strong> fishのUnicode private-use charactersについて</a></li><li><a href="faq/extra_tools.html"><strong aria-hidden="true">2.23.</strong> fishの拡張機能を探すには？</a></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">fish-docs-jp</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#よくある質問" id="よくある質問"><h1>よくある質問</h1></a>
+<a class="header" href="#環境変数の追加-削除をするには" id="環境変数の追加-削除をするには"><h2>環境変数の追加, 削除をするには？</h2></a>
+<p>[set]コマンドを使ってください.</p>
+<pre><code class="language-fish">set -x key value
+set -e key
+</code></pre>
+<a class="header" href="#ログイン時にコマンドを実行するには-fishのbashrcは" id="ログイン時にコマンドを実行するには-fishのbashrcは"><h2>ログイン時にコマンドを実行するには？ fishの.bashrcは？</h2></a>
+<p><code>~/.config/fish/config.fish</code>を編集してください.
+もし存在しなければ作成することもできます.</p>
+<a class="header" href="#独自のプロンプトを設定するには" id="独自のプロンプトを設定するには"><h2>独自のプロンプトを設定するには？</h2></a>
+<p>プロンプトは<code>fish_prompt</code>関数の出力になります.
+この関数は<code>~/.config/fish/functions/fish_prompt.fish</code>に配置してください.
+簡単な例を下に示します.</p>
+<pre><code class="language-fish">function fish_prompt
+    set_color $fish_color_cwd
+    echo -n (prompt_pwd)
+    set_color normal
+    echo -n ' &gt; '
+end
+</code></pre>
+<p>Web上の設定ツール, [fish_config]を使うこともできます.
+プロンプトのサンプルから選んで試すことができます.</p>
+<a class="header" href="#履歴からコマンドを実行するには" id="履歴からコマンドを実行するには"><h2>履歴からコマンドを実行するには？</h2></a>
+<p>コマンドの一部を入力し, それから<code>↑</code>(up)或いは<code>↓</code>(down)を押してください.
+マッチした履歴を選択することができます.</p>
+<a class="header" href="#サブコマンドを実行するには-バッククオートが動作しません" id="サブコマンドを実行するには-バッククオートが動作しません"><h2>サブコマンドを実行するには？ バッククオートが動作しません！</h2></a>
+<p><code>fish</code>はサブコマンドを実行するために<code>()</code>を使います.</p>
+<pre><code class="language-fish">for i in (ls)
+    echo $i
+end
+</code></pre>
+<a class="header" href="#pkg-configのような出力が1行の長い文字列のときどうしたらいい" id="pkg-configのような出力が1行の長い文字列のときどうしたらいい"><h2>pkg-configのような出力が1行の長い文字列のときどうしたらいい？</h2></a>
+<p>他のシェルと違って, <code>fish</code>は改行時のみ置換されたコマンドを分割します.
+スペースやタブ, $IFSに含まれる文字では分割されません.</p>
+<p>これは次のことを意味します.</p>
+<pre><code class="language-fish">echo x(printf '%s ' a b c)x
+</code></pre>
+<p>を実行すると<code>xa b c x</code>が出力されます.
+しかし次の場合,</p>
+<pre><code class="language-fish">echo x(printf '%s\n' a b c)x
+</code></pre>
+<p><code>xax xbx xcx</code>が出力されます.</p>
+<p>ほぼ全てのケースにおいてスペース区切りは望ましくないので, この仕様は改善点であるといえます.</p>
+<p>しかしながら, <code>pkg-config</code>やその周辺ツールなどではスペース区切りが必要となっています.
+このような場合, <code>string split &quot; &quot;</code>を使ってください.</p>
+<pre><code class="language-fish">g++ example_01.cpp (pkg-config --cflags --libs gtk+-2.0 | string split &quot; &quot;)
+</code></pre>
+<a class="header" href="#コマンドの終了ステータスを得るには" id="コマンドの終了ステータスを得るには"><h2>コマンドの終了ステータスを得るには？</h2></a>
+<p><code>$status</code>変数を使ってください.
+これは他のシェルで使われている<code>$?</code>変数を置き換えるものです.</p>
+<pre><code class="language-fish">somecommand
+if test $status -eq 7
+    echo &quot;That's my lucky number!&quot;
+end
+</code></pre>
+<p>もし単に成功か失敗かを知りたいだけなら, <code>if</code>のような条件構文に直接渡してください.</p>
+<pre><code class="language-fish">if somecommand
+    echo &quot;Command succeeded&quot;
+else
+    echo &quot;Command failed&quot;
+end
+</code></pre>
+<p>より詳しくは[test]コマンドや[if]コマンドを参照してください.</p>
+<a class="header" href="#一回限りの環境変数を設定するには" id="一回限りの環境変数を設定するには"><h2>一回限りの環境変数を設定するには？</h2></a>
+<p><code>SOME_VAR=1 command</code>というコマンドは次のエラーを引き起こします.
+<code>Unknown command &quot;SOME_VAR=1&quot;</code></p>
+<p>このようなときには<code>env</code>コマンドを使ってください.</p>
+<p><code>env SOME_VAR=1 command</code></p>
+<p>ブロック中で次のようにローカル変数を宣言することもできます.</p>
+<pre><code class="language-fish">begin
+    set -lx SOME_VAR 1
+    command
+end
+</code></pre>
+<a class="header" href="#変数が定義されるているか確認するには" id="変数が定義されるているか確認するには"><h2>変数が定義されるているか確認するには？</h2></a>
+<p><code>set -q var</code>コマンドを使ってください.</p>
+<p>例えば<code>if set -q --$var; echo variable defined; end</code>のように使います;</p>
+<p>複数の変数を確認するには'<code>and</code>や<code>or</code>の演算子を使ってください.</p>
+<pre><code class="language-fish">if set -q var1; or set -q var2
+    echo either variable defined
+end
+</code></pre>
+<p>定義済みの変数は空である可能性もあることに注意してください.
+次の2つのコマンドで空の変数を定義できます.
+<code>set var</code> <code>set var &quot;&quot;</code></p>
+<a class="header" href="#変数が空でないか確認するには" id="変数が空でないか確認するには"><h2>変数が空でないか確認するには？</h2></a>
+<p><code>string length -q -- $var</code>を使ってください.
+例えば<code>if string length -q -- $var; echo not empty; end</code>のように使います.</p>
+<p><code>string length</code>は複数の引数のリストを個別にチェックし, 1つでも空でなければ0を返します.</p>
+<pre><code class="language-fish">if string length -q -- $var1 $var2 $var3
+    echo at least one of these variables is not empty
+end
+</code></pre>
+<p>代わりに<code>test -n &quot;$var&quot;</code>を使ってください.
+ただしダブルクオートで変数を括ることを忘れないでください.
+例えば<code>if test -n &quot;$var&quot;; echo not empty; end</code>のように使います.
+<code>test</code>コマンドはオプションとして<code>-a</code>(and)と<code>-o</code>(or)を持ちます.</p>
+<pre><code class="language-fish">if test -n &quot;$var1&quot; -o -n &quot;$var2&quot; -o -n &quot;$var3&quot;
+    echo at least one of these variables is not empty
+end
+</code></pre>
+<a class="header" href="#set--uxユニバーサル変数のエクスポートが働かない" id="set--uxユニバーサル変数のエクスポートが働かない"><h2>set -Ux(ユニバーサル変数のエクスポート)が働かない？</h2></a>
+<p>既に同じ名前のグローバル変数が設定されています.</p>
+<p><code>EDITOR</code>や<code>TZ</code>といった環境変数は<code>set -Ux</code>によってユニバーサルに設定できます.
+しかし, fishが起動する前に既に環境変数が設定されている場合(ログインスクリプトやシステムの管理者によって),
+それはグローバル変数として設定されます.
+[変数スコープ]は&quot;inside out&quot;の検索方式をとっていて, ローカル変数, グローバル変数それからユニバーサル変数の順に変数を確認していきます.</p>
+<p>これはグローバル変数の方がユニバーサール変数よりも優先順位が高いことを意味しています.</p>
+<p>この問題を避けるために, fishの継承の設定を変えることが考えられます.
+これが不可能なら, 次のような設定を[設定ファイル] (大抵の場合, <code>~/.config/fish/config.fish</code>)に記述してください.</p>
+<pre><code class="language-fish">set -gx EDITOR vim
+</code></pre>
+<a class="header" href="#シンタックスハイライトの色を変えるには" id="シンタックスハイライトの色を変えるには"><h2>シンタックスハイライトの色を変えるには？</h2></a>
+<p>ウェブの設定ツールの[fish_config], 若しくは環境変数の[fish_color]を変更してください.</p>
+<a class="header" href="#manページの補完をアップデートするには" id="manページの補完をアップデートするには"><h2>manページの補完をアップデートするには？</h2></a>
+<p>[fish_update_completions]コマンドを使ってください.</p>
+<a class="header" href="#間違ってディレクトリのパスを打ってenter押したらディレクトリが移動してしまいました-何が起きたの" id="間違ってディレクトリのパスを打ってenter押したらディレクトリが移動してしまいました-何が起きたの"><h2>間違ってディレクトリのパスを打ってEnter押したらディレクトリが移動してしまいました. 何が起きたの？</h2></a>
+<p>fishは与えられたコマンドが存在しなくて, かつ<code>.</code>や<code>/</code>, <code>~</code>から始まる場合,
+その名前のディレクトリが存在しないか確認します.
+存在すればディレクトリを移動したいのだと暗黙的に推定して実行します.
+例えばホームディレクトリに移動する最速の方法は単に<code>~</code>と打ってEnterを押すだけです.</p>
+<a class="header" href="#オープンコマンドが働きません" id="オープンコマンドが働きません"><h2>オープンコマンドが働きません</h2></a>
+<p><code>open</code>コマンドはMIMEデータベースとGnomeやKDEが用いるファイルタイプによってデフォルトの動作を規定する,
+<code>.desktop</code>ファイルを用います.
+これらの環境が少なくとも1つでも存在するにも関わらずopenコマンドが動作しない場合,
+これらに関係するファイルが標準的な場所にインストールされていないかもしれません.
+[困ったときには]も参照ください.</p>
+<a class="header" href="#fishをデフォルトシェルにするには" id="fishをデフォルトシェルにするには"><h2>fishをデフォルトシェルにするには？</h2></a>
+<p>パッケージマネージャを使わずにコンパイルしてfishをインストールした場合,
+まず以下のコマンドによってfishをシェルのリストに追加する必要があります.
+(ただし, fishが/usr/localにインストールされていると仮定します.)</p>
+<pre><code class="language-sh">echo /usr/local/bin/fish | sudo tee -a /etc/shells
+</code></pre>
+<p>パッケージマネージャを使ってインストールした場合は既にこの操作は行われています.</p>
+<p>デフォルトシェルにするには次のコマンドを打ってください.</p>
+<pre><code class="language-sh">chsh -s /usr/local/bin/fish
+</code></pre>
+<p>上記のパスは<code>/usr/bin/fish</code>のように変更する必要があるかもしれません.
+fishがどこにインストールされているかわからない場合は<code>which fish</code>コマンドで確認してください.</p>
+<p>残念なことに変更をすぐに反映することはできないので, 一度ログアウトしてから再ログインしてください.</p>
+<a class="header" href="#screenを使ってるとき-プロンプトの前に変な出力がでます" id="screenを使ってるとき-プロンプトの前に変な出力がでます"><h2>screenを使ってるとき, プロンプトの前に変な出力がでます</h2></a>
+<p>手っ取り早い解決策はこちらです.</p>
+<p>次のコマンドをfish上で実行してください.</p>
+<pre><code class="language-fish">function fish_title; end; funcsave fish_title
+</code></pre>
+<p>これで解決するはずです.</p>
+<p>さらに何が起こっているか説明します.</p>
+<p>fishはターミナルにタイトルバーメッセージを設定します.
+screenがこの機能をサポートしており, ターミナルがサポートしていない場合,
+screenはエスケープコードを出力しターミナルはそれを無視することなくテキストとして表示してしまいます.
+fishはターミナルの種類がなんであるか判別する方法を持たないので,
+fish側からこの問題を解決することはできません.
+したがって, 上記のようにタイトルバーメッセージを空にするしか方法がありません.</p>
+<p>fishはデフォルトのタイトルバーメッセージを持っていて,
+それは<code>fish_title</code>関数が未定義のときに使われることに注意してください.
+そのため単純に<code>fish_title</code>関数を削除してもうまくいきません.</p>
+<a class="header" href="#グリーティングメッセージを変更するには" id="グリーティングメッセージを変更するには"><h2>グリーティングメッセージを変更するには？</h2></a>
+<p><code>fish_greeting</code>変数の値を変更するか, 或いは<code>fish_greeting</code>関数を作成してください.
+例えばグリーティングをなくすには次のようにします.</p>
+<pre><code class="language-fish">set fish_greeting
+</code></pre>
+<a class="header" href="#履歴置換などが働かないのはなぜ" id="履歴置換などが働かないのはなぜ"><h2>履歴置換(<code>!$</code>など)が働かないのはなぜ？</h2></a>
+<p>履歴置換は対話形式の編集が可能になる前に開発された行儀の悪いインターフェースであるからです.
+fishはこのインターフェースを無くし, 代わりに完全な対話形式の履歴想起インターフェースを持ちます.
+これまでの習慣を少し変える必要があります.
+古い行や単語を修正したいときにはまずそれを思い出してそれから編集してください.
+例えば<code>sudo !!</code>とは打たないでください. まず<code>Up</code>キーを押してそれから<code>Home</code>, 最後に<code>sudo</code>と打ってください.</p>
+<p>fishの履歴想起は以下のようにとてもシンプルかつ効率的です.</p>
+<ul>
+<li>
+<p>他のモダンなシェル同様, <code>↑</code>は最後に実行した行から順に行全体を呼び出します.
+一回押すと<code>!!</code>を置き換え, <code>!-3</code>などを置き換えたい場合には次のようにしてください.</p>
+<ul>
+<li>ずっと前の履歴を呼び出したいとき, そのコマンドの一部を打ってから<code>↑</code>を一回或いは複数回押してください.
+こうすることでその文字列を含んだコマンドに絞って呼び出すことができ,
+必要な行をより早く手に入れることができます.
+これは<code>!vi</code>や<code>!?bar.c</code>などの代わりになります.</li>
+</ul>
+</li>
+<li>
+<p><code>Alt+↑, Up</code>は直近に実行した行から順番に引数のみを呼び出します.
+一回押すと<code>!$</code>を置き換え, <code>!!:4</code>などを置き換えたい場合は次のようにしてください.</p>
+<ul>
+<li>使いたい引数が履歴のずっと前にある場合, 引数の一部を打ってから<code>Alt+↑, Up</code>を押してください.
+こうすることでその文字列を含んだ引数に絞って呼び出すことができ,
+必要な行をより早く手に入れることができます. 試してみるととても便利なことがわかるでしょう.</li>
+<li>同一の行から複数の引数を再利用したい場合(<code>!!:3*</code>のように),
+全体を呼び出した後必要ない部分を削除するといいでしょう.
+(<code>Alt+D</code>や<code>Alt+Backspace</code>を用いると手早く済みます.)</li>
+</ul>
+</li>
+</ul>
+<p>fishでの行の編集について, 詳細は[ドキュメント]を参照してください.</p>
+<a class="header" href="#-をcd--のショートカットとして使うには" id="-をcd--のショートカットとして使うには"><h2><code>-</code>を<code>cd -</code>のショートカットとして使うには？</h2></a>
+<p>2.5.0より前のfishでは<code>cd -</code>という動作をする<code>-</code>関数を定義することが可能でした.
+いくつかのバグフィクスを含んだ2.5.0のリリースによって単なる<code>-</code>は無効な関数(変数も同様)となりました.
+しかしアブリビエーションを使うことによって同様の操作を行うことができます.</p>
+<pre><code class="language-fish">abbr -a -- - 'cd -'
+</code></pre>
+<a class="header" href="#アンインストールするには" id="アンインストールするには"><h2>アンインストールするには？</h2></a>
+<p>万が一fishをアンインストールしたくなった場合, まずデフォルトシェルに設定されていないことを確認してください.
+もしそうであれば<code>chsh -s /bin/bash</code>で変更してください.</p>
+<p>次に以下の操作をしてください.
+(/usr/localにfishがインストールされていると想定しています.)</p>
+<pre><code class="language-sh">rm -Rf /usr/local/etc/fish /usr/local/share/fish ~/.config/fish
+rm /usr/local/share/man/man1/fish*.1
+cd /usr/local/bin
+rm -f fish fish_indent
+</code></pre>
+<a class="header" href="#fishのunicode-private-use-charactersについて" id="fishのunicode-private-use-charactersについて"><h2>fishのUnicode private-use charactersについて</h2></a>
+<p>fishはU+F600からU+F73Fの
+<a href="http://www.unicode.org/faq/private_use.html">Unicode private-use character</a>
+を内部的に使用しています.
+この範囲の文字を使用した場合, Unicodeの'replacement character', U+FFFDに変換されます.
+これにはインタラクティブな入力とファイルによる入力が含まれます.
+(ただし実行されるプログラムには関係しません.)</p>
+<a class="header" href="#fishの拡張機能を探すには" id="fishの拡張機能を探すには"><h2>fishの拡張機能を探すには？</h2></a>
+<p>fishのユーザーコミュニティがfishにバンドルされるほど汎用的ではないが便利で素晴らしいスクリプトを公開しています.
+プロンプトやテーマ, 便利な関数を含む, こうした拡張機能をいくつかのサードパーティのリポジトリから手に入れることができます.</p>
+<ul>
+<li><a href="https://github.com/jorgebucaran/fisher">Fisher</a></li>
+<li><a href="https://github.com/tuvistavie/fundle">Fundle</a></li>
+<li><a href="https://github.com/oh-my-fish/oh-my-fish">Oh My Fish</a></li>
+<li><a href="https://github.com/justinmayer/tacklebox">Tacklebox</a></li>
+</ul>
+<p>これは全てのリポジトリを網羅したものではなく, fishプロジェクトとして上記のリポジトリのメリットや含まれるスクリプトについて何か意見するわけではありません.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="tutorial/ready_for_more.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="faq/environment_variable.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="tutorial/ready_for_more.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="faq/environment_variable.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
