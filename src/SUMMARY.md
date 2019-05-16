@@ -30,7 +30,7 @@
   - [fishをデフォルトシェルにする](./tutorial/switching_to_fish.md)
   - [より多くを知るには](./tutorial/ready_for_more.md)
 [Design](./design.md)
-[Commands](./commands.md)
+- [コマンド一覧](./commands.md)
 - [FAQ](./faq.md)
   - [環境変数の追加, 削除をするには？](./faq/environment_variable.md)
   - [ログイン時にコマンドを実行するには？ fishの.bashrcは？](./faq/config_fish.md)
