@@ -1,6 +1,9 @@
 # Summary
 
-[Documentation](./index.md)
+- [ドキュメント](./index.md)
+  - [イントロダクション](./document/introduction.md)
+  - [シェルとは？](./document/what_is_shell.md)
+  - [インストールと始め方](document/installation_and_start.md)
 - [チュートリアル](./tutorial.md)
   - [なぜfishなのか？](./tutorial/why_fish.md)
   - [はじめかた](./tutorial/getting_started.md)
